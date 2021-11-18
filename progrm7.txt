@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class progrm7 {
+    public static void main(String[] args) {
+        try {
+            Scanner s = new Scanner(System.in);
+            int x = s.nextInt();
+        }
+        catch(Exception obj)
+            finally
+        {
+            s.close();
+        }
+    }
+}
