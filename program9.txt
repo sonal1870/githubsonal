@@ -1,0 +1,20 @@
+class VoteException extends RuntimeException {
+    VoteException(String s) {
+        Super(s);
+    }
+
+    private void Super(String s) {
+    }
+}
+    public class program9 {
+    public static void main(String[] args) {
+        int a = 10;
+        try {
+            if (a < 18) throw new VoteException("Invalid Age");
+            else
+                System.out.println("Valid Age");
+        } catch (Exception s) {
+            System.out.println(s);
+        }
+    }
+}
