@@ -1,0 +1,41 @@
+class Account
+{
+    int balance;
+    
+    public Account()
+    {
+        balance=10000;
+    }
+    public void withdraw(int val)
+    {
+        try{
+        Synchronized;
+        {
+            Thread.sleep(1000);
+            catch{}
+            balance = balance - val;
+            System.out.println(balance);
+        }}}
+static class MyThread extends Thread {
+    Account obj;
+
+    public MyThread(Account obj) {
+        obj = tobj;
+        public void run()
+        {
+            obj.withdraw(500);
+        }
+
+    }
+
+    class test {
+        public static void main(String[] args) {
+            Account obj = new Account();
+            MyThread obj1 = new Account(obj );
+            MyThread obj2 = new MyThread(obj );
+            obj1.start();
+            obj2.start();
+        }
+    }
+}
+
