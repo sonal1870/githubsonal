@@ -1,0 +1,15 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegularExpression {
+    public static void main(String[] args) {
+        Pattern p = Pattern.compile("\\s");
+        Matcher m = p.matcher("nsdjnsdj jfndsjnfdjnfdsj dfjdsnfdskefk ");
+        int count =0;
+        while (m.find())
+        {
+            count++;
+        }
+        System.out.println(count);
+    }
+}
