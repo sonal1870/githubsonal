@@ -1,0 +1,34 @@
+class Node1
+{
+    int data;
+    Node next;
+}
+class clink {
+    Node start;
+    Node last;
+
+    clink() {
+        start = null;
+        last=null;
+    }
+
+    void addfirst(int x)
+    {
+        Node newnode= new Node();
+        newnode.data=x;
+        newnode.next=null;
+        newnode.last=null;
+        if(start==null)
+        {
+            start=newnode;
+            last=newnode;
+            last.next=start;
+        }
+        else
+        {
+            newnode.next=start;
+            start=newnode;
+            last.next=start;
+        }
+    }
+}
